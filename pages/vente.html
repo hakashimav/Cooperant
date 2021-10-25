@@ -46,7 +46,24 @@
         <div class="overlay">
             <p class="vents_text">VENTES</p>
         </div>
-
+        <div class="ajout_article">
+            <form action="" method="POST" class="form_vents">
+                <legend>Ajouter un Article.</legend><br>
+                <label for="Nom">Nom :</label><br>
+                <input type="text" name="Nom" id="Nom" class="input_nom"><br>
+                <label for="des">Description :</label><br>
+                <input type="text" name="Description" id="des" class="input-des"><br>
+                <label for="etat">Etat :</label><br>
+                <input type="text" name="Etat" id="etat" class="input_etat"><br>
+                <label for="prix">Prix :</label><br>
+                <input type="text" name="Prix" id="prix" class="input_prix">
+                <select name="devise" id="devise">
+                    <option value="Franc">Fc</option>
+                    <option value="dollars">$</option>
+                    <option value="Euros">€</option>
+                </select>
+            </form>
+        </div>
         <script type="text/JavaScript" src="../assets/js/main.js"></script>
     </body>
 </html>
