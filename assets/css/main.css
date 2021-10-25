@@ -164,6 +164,7 @@
   padding: 0px 20px;
   visibility: hidden;
   text-transform: uppercase;
+  z-index: 5;
 }
 
 .header_class .item .sous_menu .ligne {
@@ -290,5 +291,47 @@
 .sous_menu .menu_icon:hover {
   -webkit-transform: scale(2);
           transform: scale(2);
+}
+
+.overlay {
+  background-color: #ffff;
+  -webkit-box-shadow: 3px 3px 20px #0e4a68;
+          box-shadow: 3px 3px 20px #0e4a68;
+  width: 100%;
+  z-index: 1;
+}
+
+.overlay .vents_text {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 20px 80vh;
+  font-size: 45px;
+  font-weight: 500;
+  font-style: italic;
+  letter-spacing: 30px;
+  text-transform: uppercase;
+  -webkit-animation: textAnime 5s ease-out infinite;
+          animation: textAnime 5s ease-out infinite;
+}
+
+@-webkit-keyframes textAnime {
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  from {
+    -webkit-transform: scale(2);
+            transform: scale(2);
+  }
+}
+
+@keyframes textAnime {
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  from {
+    -webkit-transform: scale(2);
+            transform: scale(2);
+  }
 }
 /*# sourceMappingURL=main.css.map */
