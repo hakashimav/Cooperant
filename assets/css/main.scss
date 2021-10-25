@@ -1,0 +1,236 @@
+// declaration des variables
+$text_color :#0e4a68;
+$primary_color :#27272b;
+$police : fantasy;
+$text_police : Arial;
+.header_class {
+    position: inherit;
+    background-color: white;
+    color: #f1f1f1;
+    display: flex;
+    // zone de recherche
+    .zone_search {
+        display: flex;
+        margin: 20px;
+        margin-left: 400px;
+        justify-content: center;
+        align-items: center;
+        
+        .input_search {
+            width: 500px;
+            padding: 5px 45px;
+            font-size: 16px;
+            border-radius: 5px;
+            color: $text_color;
+            font-family: $police;
+            outline: none;
+            border: 1px solid black;
+            border-bottom: 3px solid $text_color ;
+            background-color: white;
+            transition: 1s ease-in;
+
+            &:hover{
+                width: 530px;
+                margin-left: -10px;
+                transition: 1s ease-out;
+            }
+            &:focus {
+                width: 530px;
+                margin-left: -10px;
+                transition:  1s ease-out;
+            }
+        }
+
+        .btn_submit_search {
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            position: absolute;
+            margin-left: 5px;
+            padding: 5px;
+            font-size: 19px;    
+            &:hover {
+                color: $text_color;
+            }        
+        }
+
+    }
+    // text cooperant stylisé
+    .coop_anime{
+        font-family: 'poppins', sans-serif;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        cursor: pointer;
+        // positionement du text cooperant
+        .text_coop{
+            position: absolute;
+            margin-left: 100px;
+            margin-top: -10px;
+            
+            .h2_coop{
+                position: absolute;
+                transform: translate(-50%, -50%);
+                font-size: 2.3em;
+                &:nth-child(1){
+                    color: transparent;
+                    -webkit-text-stroke: 1px #6e6e70;
+                }
+                &:nth-child(2){
+                    color: $text_color;
+                    animation: animate 2s ease-in-out infinite;
+                }
+            }
+        }
+    }
+    .item {
+        margin-right: -350px;
+        margin-top: -55px;
+        .items {
+            float: right;
+            padding: 0;
+            margin: 0;
+            width: 25%;
+            height: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            font-family: $text_police;
+            list-style: none;
+            a {
+                display: block;                
+                color: #666;
+                text-decoration: none;
+                font-size: 20px;
+                &:hover {
+                    color: $text_color;
+                }        
+            }
+            li{
+                display: inline-flex;
+                padding: 10px 10px;
+            }
+            .menu {
+                color: red;
+                &:focus{
+                    color: $text_color;
+                }
+            }
+        }
+        .sous_menu {
+            position: absolute;
+            float: right;
+            margin-left: 185vh;
+            margin-top: 42px;
+            font-size: 20px;
+            font-family: $text_police;
+            list-style: none;
+            padding: 0px 20px;
+            visibility: hidden;
+            text-transform: uppercase;
+            .ligne {
+                border: 2px solid black;
+            }
+            a {
+                text-decoration: none;
+                color: #6e6e70;
+                padding: 2px;
+                &:hover{
+                    color: #0e4a68;
+                }
+            }
+            .icon {
+                position: absolute;
+                margin-left: -35px;
+                font-size: 20px;
+                margin-top: 20px;
+                color: $text_color;
+            }
+        }
+    }
+}
+.item.active .sous_menu {
+    visibility: visible;
+}
+// animation du text cooperant
+@keyframes animate{
+
+    0%,100%
+    {
+        clip-path: polygon(0% -45%, 20% 44%, 32% -50%, 54% 60%, 70% 61%, 84% 59%, 100% 52%, 100% 100%, 0% 100%);
+    }
+    50%
+    {
+        clip-path: polygon(0% 60%, -20% 65%, 34% 66%, 55% 62%, 67% 50%, -4% -45%, 100% 46%, 100% 100%, 0% 100%);
+    }
+}
+.h1 {
+    padding: 15vh;
+    margin: 5vh;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.reseaux {
+    margin-top: -120px;
+    margin-left: 300px;
+    font-size: 30px;
+    display: flex;
+    justify-content: space-between;
+    width: 20%;
+
+    a {
+        text-decoration: none;
+        color: #666;
+        &:hover {
+            color: black;
+        }
+        .f:hover{
+            color: blue;
+        }
+        .l:hover{
+            color: rgb(15, 15, 161);
+        }
+        .t:hover{
+            color: rgb(26, 26, 243);
+        }
+        .a:hover{
+            color: rgba(112, 112, 4, 0.596);
+        }
+    }
+}
+.join{
+    .btn_join{
+        position: absolute;
+        padding: 10px 10px;
+        border: 1px solid black;
+        text-decoration: none;
+        font-size: 18px;
+        font-family: Arial;
+        border-radius: 3px;
+        margin-left: 350px;
+        margin-top: 10px;
+        color: black;
+        font-weight: 700;
+        transition: 2s;
+
+        &:hover{
+            background-color: #0e4a68;
+            color: #f1f1f1;
+            transition: 2s ease-out;
+        }
+    }
+}
+// ---------------------------------------the style for vents page------------------------------------------------------------------
+.items_vente{
+    
+    .home_icon:hover{
+        transform: scale(2);
+    }
+}
+.sous_menu{
+
+    .menu_icon:hover{
+        transform: scale(2);
+    }
+}

@@ -1,0 +1,294 @@
+.header_class {
+  position: inherit;
+  background-color: white;
+  color: #f1f1f1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header_class .zone_search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 20px;
+  margin-left: 400px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header_class .zone_search .input_search {
+  width: 500px;
+  padding: 5px 45px;
+  font-size: 16px;
+  border-radius: 5px;
+  color: #0e4a68;
+  font-family: fantasy;
+  outline: none;
+  border: 1px solid black;
+  border-bottom: 3px solid #0e4a68;
+  background-color: white;
+  -webkit-transition: 1s ease-in;
+  transition: 1s ease-in;
+}
+
+.header_class .zone_search .input_search:hover {
+  width: 530px;
+  margin-left: -10px;
+  -webkit-transition: 1s ease-out;
+  transition: 1s ease-out;
+}
+
+.header_class .zone_search .input_search:focus {
+  width: 530px;
+  margin-left: -10px;
+  -webkit-transition: 1s ease-out;
+  transition: 1s ease-out;
+}
+
+.header_class .zone_search .btn_submit_search {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  margin-left: 5px;
+  padding: 5px;
+  font-size: 19px;
+}
+
+.header_class .zone_search .btn_submit_search:hover {
+  color: #0e4a68;
+}
+
+.header_class .coop_anime {
+  font-family: 'poppins', sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.header_class .coop_anime .text_coop {
+  position: absolute;
+  margin-left: 100px;
+  margin-top: -10px;
+}
+
+.header_class .coop_anime .text_coop .h2_coop {
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 2.3em;
+}
+
+.header_class .coop_anime .text_coop .h2_coop:nth-child(1) {
+  color: transparent;
+  -webkit-text-stroke: 1px #6e6e70;
+}
+
+.header_class .coop_anime .text_coop .h2_coop:nth-child(2) {
+  color: #0e4a68;
+  -webkit-animation: animate 2s ease-in-out infinite;
+          animation: animate 2s ease-in-out infinite;
+}
+
+.header_class .item {
+  margin-right: -350px;
+  margin-top: -55px;
+}
+
+.header_class .item .items {
+  float: right;
+  padding: 0;
+  margin: 0;
+  width: 25%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: Arial;
+  list-style: none;
+}
+
+.header_class .item .items a {
+  display: block;
+  color: #666;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.header_class .item .items a:hover {
+  color: #0e4a68;
+}
+
+.header_class .item .items li {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 10px 10px;
+}
+
+.header_class .item .items .menu {
+  color: red;
+}
+
+.header_class .item .items .menu:focus {
+  color: #0e4a68;
+}
+
+.header_class .item .sous_menu {
+  position: absolute;
+  float: right;
+  margin-left: 185vh;
+  margin-top: 42px;
+  font-size: 20px;
+  font-family: Arial;
+  list-style: none;
+  padding: 0px 20px;
+  visibility: hidden;
+  text-transform: uppercase;
+}
+
+.header_class .item .sous_menu .ligne {
+  border: 2px solid black;
+}
+
+.header_class .item .sous_menu a {
+  text-decoration: none;
+  color: #6e6e70;
+  padding: 2px;
+}
+
+.header_class .item .sous_menu a:hover {
+  color: #0e4a68;
+}
+
+.header_class .item .sous_menu .icon {
+  position: absolute;
+  margin-left: -35px;
+  font-size: 20px;
+  margin-top: 20px;
+  color: #0e4a68;
+}
+
+.item.active .sous_menu {
+  visibility: visible;
+}
+
+@-webkit-keyframes animate {
+  0%, 100% {
+    -webkit-clip-path: polygon(0% -45%, 20% 44%, 32% -50%, 54% 60%, 70% 61%, 84% 59%, 100% 52%, 100% 100%, 0% 100%);
+            clip-path: polygon(0% -45%, 20% 44%, 32% -50%, 54% 60%, 70% 61%, 84% 59%, 100% 52%, 100% 100%, 0% 100%);
+  }
+  50% {
+    -webkit-clip-path: polygon(0% 60%, -20% 65%, 34% 66%, 55% 62%, 67% 50%, -4% -45%, 100% 46%, 100% 100%, 0% 100%);
+            clip-path: polygon(0% 60%, -20% 65%, 34% 66%, 55% 62%, 67% 50%, -4% -45%, 100% 46%, 100% 100%, 0% 100%);
+  }
+}
+
+@keyframes animate {
+  0%, 100% {
+    -webkit-clip-path: polygon(0% -45%, 20% 44%, 32% -50%, 54% 60%, 70% 61%, 84% 59%, 100% 52%, 100% 100%, 0% 100%);
+            clip-path: polygon(0% -45%, 20% 44%, 32% -50%, 54% 60%, 70% 61%, 84% 59%, 100% 52%, 100% 100%, 0% 100%);
+  }
+  50% {
+    -webkit-clip-path: polygon(0% 60%, -20% 65%, 34% 66%, 55% 62%, 67% 50%, -4% -45%, 100% 46%, 100% 100%, 0% 100%);
+            clip-path: polygon(0% 60%, -20% 65%, 34% 66%, 55% 62%, 67% 50%, -4% -45%, 100% 46%, 100% 100%, 0% 100%);
+  }
+}
+
+.h1 {
+  padding: 15vh;
+  margin: 5vh;
+  font-size: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.reseaux {
+  margin-top: -120px;
+  margin-left: 300px;
+  font-size: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 20%;
+}
+
+.reseaux a {
+  text-decoration: none;
+  color: #666;
+}
+
+.reseaux a:hover {
+  color: black;
+}
+
+.reseaux a .f:hover {
+  color: blue;
+}
+
+.reseaux a .l:hover {
+  color: #0f0fa1;
+}
+
+.reseaux a .t:hover {
+  color: #1a1af3;
+}
+
+.reseaux a .a:hover {
+  color: rgba(112, 112, 4, 0.596);
+}
+
+.join .btn_join {
+  position: absolute;
+  padding: 10px 10px;
+  border: 1px solid black;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: Arial;
+  border-radius: 3px;
+  margin-left: 350px;
+  margin-top: 10px;
+  color: black;
+  font-weight: 700;
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+.join .btn_join:hover {
+  background-color: #0e4a68;
+  color: #f1f1f1;
+  -webkit-transition: 2s ease-out;
+  transition: 2s ease-out;
+}
+
+.items_vente .home_icon:hover {
+  -webkit-transform: scale(2);
+          transform: scale(2);
+}
+
+.sous_menu .menu_icon:hover {
+  -webkit-transform: scale(2);
+          transform: scale(2);
+}
+/*# sourceMappingURL=main.css.map */
