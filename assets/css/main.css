@@ -334,4 +334,107 @@
             transform: scale(2);
   }
 }
+
+.ajout_article {
+  position: relative;
+  margin-left: 300px;
+  background-color: #ffff;
+  -webkit-box-shadow: 3px 3px 20px #0e4a68;
+          box-shadow: 3px 3px 20px #0e4a68;
+  width: 60%;
+}
+
+.ajout_article .form_vents {
+  padding: 20px 10px;
+  margin: 0px 10px;
+}
+
+.ajout_article .form_vents legend {
+  font-size: 30px;
+}
+
+.ajout_article .form_vents label {
+  font-size: 25px;
+  font-weight: bold;
+  font-family: 'Courier New', Courier, monospace;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.ajout_article .form_vents .input {
+  padding: 5px 7px;
+  font-size: 20px;
+  font-family: 'Courier New', Courier, monospace;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid black;
+  height: 20px;
+}
+
+.ajout_article .form_vents .input:focus {
+  border-bottom: 2px solid springgreen;
+}
+
+.ajout_article .form_vents select {
+  position: absolute;
+  padding: 5px 7px;
+  font-size: 20px;
+  font-family: 'Courier New', Courier, monospace;
+  border: none;
+  border-bottom: 2px solid black;
+  margin-top: -5px;
+  outline: none;
+}
+
+.ajout_article .form_vents .input_prix {
+  width: 25%;
+}
+
+.ajout_article .form_vents .input_prix:focus ~ select {
+  border-bottom: 2px solid yellowgreen;
+}
+
+.ajout_article .form_vents button {
+  padding: 10px;
+  margin: 20px;
+  font-size: 18px;
+  background: transparent;
+  outline: none;
+  border: 1px solid #666;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 600;
+  cursor: pointer;
+  -webkit-transition: 1s ease-in;
+  transition: 1s ease-in;
+}
+
+.ajout_article .form_vents .btn_valide:hover {
+  background-color: green;
+  color: white;
+}
+
+.ajout_article .form_vents .btn_annule:hover {
+  background-color: red;
+  color: white;
+}
+
+.ajout_article .image_article {
+  position: absolute;
+  margin-left: 300px;
+  margin-top: -420px;
+  border: 1px solid black;
+  width: 440px;
+  height: 400px;
+}
+
+.ajout_article .image_article .image {
+  position: relative;
+  padding: 250px 100px;
+}
+
+.ajout_article .image_article #camera {
+  position: absolute;
+  font-size: 100px;
+  padding: 145px 150px;
+}
 /*# sourceMappingURL=main.css.map */

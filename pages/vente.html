@@ -47,21 +47,25 @@
             <p class="vents_text">VENTES</p>
         </div>
         <div class="ajout_article">
-            <form action="" method="POST" class="form_vents">
+            <form action="" method="POST" enctype="multipart/form-data" class="form_vents">
                 <legend>Ajouter un Article.</legend><br>
-                <label for="Nom">Nom :</label><br>
-                <input type="text" name="Nom" id="Nom" class="input_nom"><br>
-                <label for="des">Description :</label><br>
-                <input type="text" name="Description" id="des" class="input-des"><br>
-                <label for="etat">Etat :</label><br>
-                <input type="text" name="Etat" id="etat" class="input_etat"><br>
-                <label for="prix">Prix :</label><br>
-                <input type="text" name="Prix" id="prix" class="input_prix">
+                <label for="Nom">Nom</label><br>
+                <input type="text" name="Nom" id="Nom" class="input_nom input" placeholder="ex: Iphone,Chemise..." required><br><br>
+                <label for="des">Description</label><br>
+                <input type="text" name="Description" id="des" class="input-des input" placeholder="ex: Telephone..."><br><br>
+                <label for="etat">Etat</label><br>
+                <input type="text" name="Etat" id="etat" class="input_etat input" placeholder="ex: Ecran cassé..." required><br><br>
+                <label for="prix">Prix</label><br>
+                <input type="text" name="Prix" id="prix" class="input_prix input" required>
                 <select name="devise" id="devise">
                     <option value="Franc">Fc</option>
                     <option value="dollars">$</option>
                     <option value="Euros">€</option>
-                </select>
+                </select><br><br>
+                <button type="submit" class="btn_valide">Valider</button><button type="reset" class="btn_annule">Annuler</button>
+                <div class="image_article">
+                    <i class="fa fa-camera camera" id="camera"></i><input type="file"  name="image" id="image" class="image">
+                </div>
             </form>
         </div>
         <script type="text/JavaScript" src="../assets/js/main.js"></script>

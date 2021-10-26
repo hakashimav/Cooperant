@@ -259,3 +259,89 @@ $text_police : Arial;
         transform: scale(2);
     }
 }
+.ajout_article{
+    position: relative;
+    margin-left: 300px;
+    background-color: #ffff;
+    box-shadow: 3px 3px 20px #0e4a68;
+    width: 60%;
+    .form_vents{
+        padding: 20px 10px;
+        margin: 0px 10px;
+        legend{
+            font-size: 30px;
+        }
+        label{
+            font-size: 25px;
+            font-weight: bold;
+            font-family: 'Courier New', Courier, monospace;
+            padding: 5px;
+            cursor: pointer;
+        }
+        .input{
+            padding: 5px 7px;
+            font-size: 20px;
+            font-family: 'Courier New', Courier, monospace;
+            outline: none;
+            border: none;
+            border-bottom: 2px solid black;
+            height: 20px;
+            &:focus{
+                border-bottom: 2px solid springgreen;
+            }
+        }
+        select{
+            position: absolute;
+            padding: 5px 7px;
+            font-size: 20px;
+            font-family: 'Courier New', Courier, monospace;
+            border: none;
+            border-bottom: 2px solid black;
+            margin-top: -5px;
+            outline: none;
+        }
+        .input_prix{
+            width: 25%;
+            &:focus ~ select{
+                border-bottom: 2px solid yellowgreen;
+            }
+        }
+        button{
+            padding: 10px;
+            margin: 20px;
+            font-size: 18px;
+            background: transparent;
+            outline: none;
+            border: 1px solid #666;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: 600;
+            cursor: pointer;
+            transition: 1s ease-in;
+        }
+        .btn_valide:hover{
+            background-color: green;
+            color: white;
+        }
+        .btn_annule:hover{
+            background-color: red;
+            color: white;
+        }
+    }
+    .image_article{
+        position: absolute;
+        margin-left: 300px;
+        margin-top: -420px;
+        border: 1px solid black;
+        width: 440px;
+        height: 400px;
+        .image{
+            position: relative;
+            padding: 250px 100px ;
+        }
+        #camera{
+            position: absolute;
+            font-size: 100px;
+            padding: 145px 150px;
+        }
+    }
+}
