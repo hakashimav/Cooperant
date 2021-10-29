@@ -7,20 +7,28 @@ Menu.addEventListener("click", () => {
    console.log(reponse);
 });
 
-// const txtAnim = document.querySelector(".h1");
+const txtAnim = document.querySelector(".h1");
 
-// new Typewriter(txtAnim, {
-//     // deleteSpeed: 17
-// })
-// .changeDelay(17)
-// .typeString(" Tranquilité")
-// .pauseFor(300)
-// .typeString(" Surete")
-// .pauseFor("1000")
-// .deleteChars(6)
-// .typeString("Qualité")
-// .start()
-
-const photo = document.getElementsByClassName("image");
-
-console.log(typeof(photo));
+new Typewriter(txtAnim, {
+      loop: true,
+     deleteSpeed: 20
+     
+})
+.changeDelay(30)
+.typeString(" Coopérer en toute,")
+.pauseFor(1000)
+.typeString(" Sécurité")
+.pauseFor(1000)
+.deleteChars(8)
+.pauseFor(1000)
+.typeString("<span style='color:#0e4a68'> Tranquilité</span>")
+.pauseFor(1000)
+.deleteChars(11)
+.pauseFor(1000)
+.typeString("<span style='color:red;'> Surété</span>")
+.pauseFor(1000)
+.deleteChars(6)
+.pauseFor(1000)
+.typeString("<span style='color:#666;'> Qualité</span>")
+.pauseFor(1000)
+.start()

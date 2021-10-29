@@ -27,6 +27,7 @@
                         <button type="submit" title="Recherche" class="btn_submit_search"><i class="fa fa-search"></i></button><input type="search" name="input_search" id="input_search" class="input_search" placeholder="Rechercher...">
                     </form>
                 </div>
+                
                 <div class="item">
                     <ul class="items" >
                         <a href="" title="Compte"><i class="fa fa-user"></i><li>Compte</li></a>
@@ -34,7 +35,7 @@
                         <a href="#" title="Menu" class="menu" id="menu"><i class="fa fa-ellipsis-v"></i><li>Menu</li></a>
                     </ul>
                     <ol class="sous_menu">
-                        <a href="pages/vente.html" title="Vente"><i class="fa fa-cart-arrow-down icon"></i><li>Ventes</li></a>
+                        <a href="pages/vente.php" title="Vente"><i class="fa fa-cart-arrow-down icon"></i><li>Ventes</li></a>
                         <a href="pages/achats.html" title="Achat"><i class="fa fa-shopping-bag icon"></i><li>Achats</li></a>
                         <li class="ligne"></li>
                         <a href="" title="Vente&Achat"><li>Vente&Achat</li></a>
@@ -53,7 +54,8 @@
         <div class="join">
             <a href="" title="Rejoignez-nous" class="btn_join">Re-joignez Nous!</a>
         </div>
-        <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+        <!-- <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script> -->
+        <script type="text/JavaScript" src="assets/js/core.js"></script>
         <script type="text/JavaScript" src="assets/js/main.js"></script>
     </body>
 </html>

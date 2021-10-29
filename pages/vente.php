@@ -29,7 +29,7 @@
                 </div>
                 <div class="item">
                     <ul class="items items_vente" >
-                        <a href="../index.html" title="Accueil"><i class="fa fa-home home_icon"></i><li class="accueil">Accueil</li></a>
+                        <a href="../index.php" title="Accueil"><i class="fa fa-home home_icon"></i><li class="accueil">Accueil</li></a>
                         <a href="" title="Panier" ><i class="fa fa-cart-plus home_icon"></i><li>Panier</li></a>
                         <a href="#" title="Menu" class="menu" id="menu"><i class="fa fa-ellipsis-v home_icon"></i><li>Menu</li></a>
                     </ul>
@@ -47,7 +47,7 @@
             <p class="vents_text">VENTES</p>
         </div>
         <div class="ajout_article">
-            <form action="" method="POST" enctype="multipart/form-data" class="form_vents">
+            <form action="traitement.php" method="POST" enctype="multipart/form-data" class="form_vents">
                 <legend>Ajouter un Article.</legend><br>
                 <label for="Nom">Nom</label><br>
                 <input type="text" name="Nom" id="Nom" class="input_nom input" placeholder="ex: Iphone,Chemise..." required><br><br>
@@ -57,14 +57,14 @@
                 <input type="text" name="Etat" id="etat" class="input_etat input" placeholder="ex: Ecran cassé..." required><br><br>
                 <label for="prix">Prix</label><br>
                 <input type="text" name="Prix" id="prix" class="input_prix input" required>
-                <select name="devise" id="devise">
+                <select name="Devise" id="devise">
                     <option value="Franc">Fc</option>
                     <option value="dollars">$</option>
                     <option value="Euros">€</option>
                 </select><br><br>
                 <button type="submit" class="btn_valide">Valider</button><button type="reset" class="btn_annule">Annuler</button>
                 <div class="image_article">
-                    <i class="fa fa-camera camera" id="camera"></i><input type="file"  name="image" id="image" class="image">
+                    <i class="fa fa-camera camera" id="camera"></i><input type="file"  name="Image" id="Image" class="image">
                 </div>
             </form>
         </div>
