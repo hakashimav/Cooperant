@@ -31,4 +31,4 @@ new Typewriter(txtAnim, {
 .pauseFor(1000)
 .typeString("<span style='color:#666;'> Qualité</span>")
 .pauseFor(1000)
-.start();
+.start()

@@ -1,25 +1,21 @@
-const txtAnim = document.querySelector(".h4");
+const message = document.querySelector(".h4");
 
-new Typewriter(txtAnim, {
-      loop: true,
-     deleteSpeed: 20
-     
+new Typewriter(message, {
+    loop: true,
+   deleteSpeed: 20
 })
 .changeDelay(30)
-.typeString(" Parce que...,")
+.typeString(" Parce que l'envie...")
 .pauseFor(1000)
-.typeString(" Sécurité")
+.typeString("de Coopérer vous,")
 .pauseFor(1000)
-.deleteChars(8)
+.typeString(" de passer")
 .pauseFor(1000)
-.typeString("<span style='color:#0e4a68'> Tranquillité</span>")
+.typeString(" alors,")
 .pauseFor(1000)
-.deleteChars(12)
+.typeString("rejoignez-nous!")
 .pauseFor(1000)
-.typeString("<span style='color:red;'> Sûreté</span>")
+.typeString("en vous")
 .pauseFor(1000)
-.deleteChars(6)
-.pauseFor(1000)
-.typeString("<span style='color:#666;'> Qualité</span>")
-.pauseFor(1000)
+.typeString("inscrivant ici!")
 .start()
