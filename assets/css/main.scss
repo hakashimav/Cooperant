@@ -218,7 +218,7 @@ $text_police : Arial;
         &:hover{
             background-color: #0e4a68;
             color: #f1f1f1;
-            transition: 2s ease-out;
+            transition: 1s;
         }
     }
 }
@@ -316,7 +316,7 @@ $text_police : Arial;
             font-family: 'Courier New', Courier, monospace;
             font-weight: 600;
             cursor: pointer;
-            transition: 1s ease-in;
+            transition: 1s;
         }
         .btn_valide:hover{
             background-color: green;

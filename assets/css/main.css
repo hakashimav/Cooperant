@@ -279,8 +279,8 @@
 .join .btn_join:hover {
   background-color: #0e4a68;
   color: #f1f1f1;
-  -webkit-transition: 2s ease-out;
-  transition: 2s ease-out;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 .items_vente .home_icon:hover {
@@ -404,8 +404,8 @@
   font-family: 'Courier New', Courier, monospace;
   font-weight: 600;
   cursor: pointer;
-  -webkit-transition: 1s ease-in;
-  transition: 1s ease-in;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 .ajout_article .form_vents .btn_valide:hover {

@@ -52,7 +52,7 @@
                 <label for="Nom">Nom</label><br>
                 <input type="text" name="Nom" id="Nom" class="input_nom input" placeholder="ex: Iphone,Chemise..." required><br><br>
                 <label for="des">Description</label><br>
-                <input type="text" name="Description" id="des" class="input-des input" placeholder="ex: Telephone..."><br><br>
+                <input type="text" name="Description" id="des" class="input-des input" placeholder="ex: Telephone..." required><br><br>
                 <label for="etat">Etat</label><br>
                 <input type="text" name="Etat" id="etat" class="input_etat input" placeholder="ex: Ecran cassé..." required><br><br>
                 <label for="prix">Prix</label><br>

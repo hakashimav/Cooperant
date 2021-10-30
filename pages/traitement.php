@@ -12,7 +12,7 @@
 </head>
 <body>
 ';
-    function securiter($donnees){
+    function securite($donnees){
         $donnees = trim($donnees);
         $donnees = stripslashes($donnees);
         $donnees = strip_tags($donnees);
@@ -25,13 +25,14 @@
     
     //recupération des données
 
-    $Nom = securiter($_POST["Nom"]);
-    $Description = securiter($_POST["Description"]);
-    $Etat = securiter($_POST["Etat"]);
-    $Prix = securiter($_POST["Prix"]);
-    $Devise = securiter($_POST["Devise"]);
+    $Nom = securite($_POST["Nom"]);
+    $Description = securite($_POST["Description"]);
+    $Etat = securite($_POST["Etat"]);
+    $Prix = securite($_POST["Prix"]);
+    $Devise = securite($_POST["Devise"]);
     $Images = $_FILES["Image"]["name"];
     $Photo = $_FILES["Image"]["tmp_name"];
+    
     // Appel des instructions de la conexion avec la base des données
     include('connexion.php');
     //Insertion des données saisie via le formulaire vers la base des données
@@ -40,7 +41,7 @@
 
     $res=Mysqli_query($con, $req_insert) or die(Mysqli_error($con));
         if($res==true){ //vérification du résultat d'insertion si vrai
-            move_uploaded_file($Photo, 'Images/'.$Images);  // Déplacement de la photo vers le repertoire du serveur web
+            move_uploaded_file($Images, 'Images/'.$Photo);  // Déplacement de la photo vers le repertoire du serveur web
                    
         $reqs="select* from ventes"; // requette de selection de tous les étudiants inscrits
         $ress=Mysqli_query($con, $reqs) or die(Mysqli_error($con)); // traitement de la requette
@@ -55,6 +56,7 @@
                 <td>Nom</td>
                 <td>Description</td>
                 <td>Prix</td>
+                
             </tr>  ';
             do{ // Affichage en boucle des enregistrements trouvés
                 echo "<tr><td><img src='../assets/images/".$tableau['Image']."' width='100px' height='100px'></td><td>".$tableau['Nom']."</td><td>"
