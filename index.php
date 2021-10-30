@@ -52,7 +52,7 @@
             <a href="" title="Bitcoin"><i class="fa fa-btc"></i></a>
         </div>
         <div class="join">
-            <a href="" title="Rejoignez-nous" class="btn_join">Re-joignez Nous!</a>
+            <a href="pages/join_me.html" title="Rejoignez-nous" class="btn_join">Re-joignez Nous!</a>
         </div>
         <!-- <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script> -->
         <script type="text/JavaScript" src="assets/js/core.js"></script>
